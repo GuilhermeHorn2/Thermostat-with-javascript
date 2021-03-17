@@ -1,0 +1,18 @@
+class Thermostat {
+  constructor(f){
+    this.f = 5/9 * (f - 32);
+  }
+  get temperature(){
+    return this.f;
+    
+  }
+  set temperature(c){    
+    this.f = c;
+  } 
+}
+
+/*example on how to call the thermostat:(the temperature will be stored in teh temp variable)
+const thermos = new Thermostat(76); // Setting in Fahrenheit scale
+let temp = thermos.temperature;
+
+*/
